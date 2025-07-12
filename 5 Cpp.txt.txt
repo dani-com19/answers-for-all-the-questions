@@ -1,0 +1,25 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int number;
+    int sum = 0;
+
+    cout << "Enter numbers (enter 0 to stop):" << endl;
+
+    // Keep asking for numbers until the user enters 0
+    while (true) {
+        cin >> number; // Read a number from the user
+
+        if (number == 0) {
+            break; // Stop the loop if user enters 0
+        }
+
+        sum += number; // Add the number to the sum
+    }
+
+    // Print the total sum
+    cout << "The sum of all entered numbers is: " << sum << endl;
+
+    return 0;
+}
