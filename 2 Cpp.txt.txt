@@ -1,0 +1,24 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int mark;
+
+    // Ask the user to enter the student's mark
+    cout << "Enter the student's mark (0–100): ";
+    cin >> mark;
+
+    // Check if the mark is within the valid range
+    if (mark < 0 || mark > 100) {
+        cout << "Invalid mark! Please enter a value between 0 and 100." << endl;
+    } else {
+        // Determine if the student passed or failed
+        if (mark >= 100) {
+            cout << "Pass" << endl;
+        } else {
+            cout << "Fail" << endl;
+        }
+    }
+
+    return 0;
+}
