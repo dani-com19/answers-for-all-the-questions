@@ -1,0 +1,16 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int i = 2; // Start from the first even number
+
+    cout << "Even numbers from 1 to 20:" << endl;
+
+    while (i <= 20) {
+        cout << i << " ";
+        i += 2; // Move to the next even number
+    }
+
+    cout << endl; // Newline after printing all numbers
+    return 0;
+}
